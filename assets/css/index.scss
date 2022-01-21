@@ -1,0 +1,12 @@
+//out: index.css
+
+@import "./variables/_responsive-rules.scss";
+@import "./variables/_colors.scss";
+@import "_layout.scss";
+@import "_scrollbar.scss";
+@import "_header.scss";
+@import "_slider.scss";
+@import "_section-news.scss";
+@import "_section-products.scss";
+@import "_section-services.scss";
+@import "_footer.scss";

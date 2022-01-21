@@ -1,0 +1,128 @@
+#header-hamburger {
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 2%;
+  cursor: pointer;
+  @include respond-to(mob) {
+    display: none;
+  }
+  @include respond-to(medium-screens) {
+    display: none;
+  }
+}
+
+#header-top-rectangles {
+  height: 1000px;
+  background-image: url("../images/rectangles.png");
+  background-size: 100% 500px;
+  background-position: top right;
+  background-repeat: no-repeat;
+  @include respond-to(mob) {
+    display: none;
+  }
+  @include respond-to(medium-screens) {
+    display: none;
+  }
+}
+
+#header-top-skew {
+  height: inherit;
+  overflow: hidden;
+}
+
+#header-top-skew p {
+  color: #585862;
+  font-weight: 600;
+}
+
+#header-top-skew-top {
+  font-size: 90px;
+  transform: rotate(339deg) translate(681px, 303px) skew(31.2deg, 2deg);
+  overflow: hidden;
+  @include respond-to(laptop-screens) {
+    transform: rotate(335deg) translate(246px, 188px) skew(7deg, -1deg);
+  }
+  @include respond-to(wide-screens) {
+    transform: rotate(336deg) translate(429px, 258px) skew(17deg, 3deg);
+  }
+}
+
+#skew-top-line {
+  height: 300px;
+  width: 1px;
+  background-color: black;
+  margin-left: 3%;
+  margin-bottom: -2%;
+  @include respond-to(laptop-screens) {
+    height: 292px;
+    margin-left: 5.6%;
+    margin-bottom: -2%;
+  }
+  @include respond-to(wide-screens) {
+    height: 292px;
+    margin-left: 4%;
+  }
+}
+
+#skew-bottom-line {
+  background-color: black;
+  height: 1px;
+  width: 610px;
+  margin-top: -1.2%;
+  margin-left: 4%;
+  @include respond-to(laptop-screens) {
+    margin-top: -2%;
+    margin-left: 6%;
+  }
+  @include respond-to(wide-screens) {
+    width: 540px;
+    margin-top: -1.5%;
+  }
+}
+
+#header-top-skew-bottom {
+  font-size: 90px;
+  transform: rotate(341deg) translate(860px, 312px) skew(-21deg, 3deg);
+  @include respond-to(laptop-screens) {
+    transform: rotate(338deg) translate(361px, 222px) skew(-21deg, 3deg);
+  }
+  @include respond-to(wide-screens) {
+    transform: rotate(341deg) translate(580px, 261px) skew(-21deg, 3deg);
+  }
+}
+
+#skew-bottom-line-vertical {
+  width: 1px;
+  height: 310px;
+  background-color: black;
+  margin-left: 52%;
+  margin-top: 12.9%;
+  @include respond-to(laptop-screens) {
+    height: 351px;
+    margin-left: 48.3%;
+    margin-top: 19.8%;
+  }
+  @include respond-to(wide-screens) {
+    height: 343px;
+    margin-left: 49.2%;
+    margin-top: 15.6%;
+  }
+}
+
+#header-bottom {
+  padding: 2% 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  margin: 0 2%;
+  @include respond-to(mob) {
+    font-size: 15px;
+    margin: 1%;
+  }
+}

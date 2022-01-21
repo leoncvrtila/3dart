@@ -1,0 +1,33 @@
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  @include respond-to($mob) {
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+  }
+  @include respond-to($tablet) {
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background: #dfdfdf;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #474747;
+  @include respond-to($mob) {
+    border-radius: 100px;
+    background: #8e8e8e;
+  }
+  @include respond-to($tablet) {
+    background: #8e8e8e;
+  }
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #585858;
+}

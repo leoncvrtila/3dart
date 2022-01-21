@@ -1,0 +1,133 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+#section-products-top {
+  @extend .flex;
+  justify-content: start;
+  margin-bottom: 3%;
+  @include respond-to(mob) {
+    display: block;
+  }
+  @include respond-to(medium-screens) {
+    display: block;
+    margin-bottom: 4%;
+  }
+}
+
+#section-products-top h3 {
+  width: 20%;
+}
+
+#section-products-filterbar {
+  @extend .flex;
+  width: 75%;
+  @include respond-to(mob) {
+    display: block;
+    width: 100%;
+  }
+  @include respond-to(medium-screens) {
+    margin-top: 2%;
+    width: 100%;
+  }
+  @include respond-to(laptop-screens) {
+    width: 95%;
+  }
+  @include respond-to(wide-screens) {
+    width: 80%;
+  }
+}
+
+#section-products-filterbar > p {
+  color: black;
+}
+
+#section-products-bottom {
+  @extend .flex;
+}
+
+#section-products-sidebar {
+  width: 20%;
+  @include respond-to(mob) {
+    display: none;
+  }
+  @include respond-to(laptop-screens) {
+    width: 55%;
+  }
+  @include respond-to(wide-screens) {
+    width: 28%;
+  }
+}
+
+#section-products-items {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  @include respond-to(mob) {
+    width: 90%;
+  }
+  @include respond-to(medium-screens) {
+    width: 50%;
+  }
+  @include respond-to(laptop-screens) {
+    width: 90%;
+    justify-content: space-between;
+  }
+  @include respond-to(wide-screens) {
+    width: 70%;
+    justify-content: space-between;
+  }
+}
+
+.section-products-item {
+  width: 45%;
+  margin-top: 5%;
+  @include respond-to(mob) {
+    width: 100%;
+  }
+  @include respond-to(medium-screens) {
+    width: 100%;
+  }
+  @include respond-to(laptop-screens) {
+    width: 45%;
+  }
+  @include respond-to(wide-screens) {
+    width: 42%;
+  }
+}
+
+button::after {
+  content: "→";
+  margin-left: 20%;
+}
+
+.section-products-item p {
+  margin: 4% 0;
+}
+
+#section-products-filterbar-items {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  @include respond-to(mob) {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 3%;
+  }
+}
+
+#section-products-filterbar-items p {
+  cursor: pointer;
+  transition: ease-in 0.2s;
+  @include respond-to(mob) {
+    width: 45%;
+    margin: 1% 0%;
+  }
+}
+
+#section-products-filterbar-items p:hover {
+  color: #0e0d0d;
+}

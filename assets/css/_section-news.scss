@@ -1,0 +1,39 @@
+#section-news h3 {
+  margin-bottom: 3%;
+}
+
+#posts {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 4%;
+}
+
+.post {
+  width: 25%;
+  @include respond-to(mob) {
+    width: 30%;
+  }
+  @include respond-to(medium-screens) {
+    width: 30%;
+  }
+  @include respond-to(laptop-screens) {
+    width: 30%;
+  }
+}
+
+.post p {
+  margin-top: 4%;
+}
+
+.post-img {
+  height: 250px;
+  width: 100%;
+  background-color: #474747;
+  @include respond-to(mob) {
+    height: 100px;
+  }
+  @include respond-to(medium-screens) {
+    height: 200px;
+  }
+}

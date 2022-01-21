@@ -1,0 +1,105 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Arial", sans-serif;
+}
+
+section,
+footer,
+nav {
+  width: 70%;
+  margin: auto;
+  @include respond-to(mob) {
+    width: 90%;
+  }
+  @include respond-to(medium-screens) {
+    width: 90%;
+  }
+  @include respond-to(laptop-screens) {
+    width: 85%;
+  }
+  @include respond-to(wide-screens) {
+    width: 75%;
+  }
+}
+
+section {
+  padding: 3% 0;
+  @include respond-to(mob) {
+    padding: 7% 0;
+  }
+  @include respond-to(medium-screens) {
+    padding: 7% 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+  color: black;
+}
+
+h4 {
+  font-size: 18px;
+  color: #1f2937;
+}
+
+h5 {
+  font-size: 18px;
+  color: #1f2937;
+}
+
+p {
+  color: $text-color;
+  @include respond-to(medium-screens) {
+    font-size: 15px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+}
+
+a:hover {
+  color: $link-color-hover;
+}
+
+button {
+  background-color: transparent;
+  border: 0px;
+  color: #828282;
+  width: 30%;
+  text-align: left;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+  @include respond-to(medium-screens) {
+    width: 50%;
+  }
+  @include respond-to(laptop-screens) {
+    width: 50%;
+  }
+  @include respond-to(wide-screens) {
+    width: 40%;
+  }
+}
+
+button:hover {
+  color: #424242;
+}
+
+.vertical-line {
+  height: 100px;
+  width: 1px;
+  margin: auto;
+  background-color: #585862;
+}
